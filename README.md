@@ -1,4 +1,4 @@
-# simulationcraft-cookbook
+# SimulationCraft Cookbook
 
 Installs simc
 
