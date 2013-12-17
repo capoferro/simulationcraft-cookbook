@@ -9,7 +9,11 @@
 
 include_recipe "subversion::client"
 
-directory source_dir
+node.normal[:simulationcraft][:source][:dir] = ::File.join node[:simulationcraft][:home], "src"
+
+directory node[:simulationcraft][:source][:dir] do
+  recursive true
+end
 
 subversion "simulationcraft" do
   repository node[:simulationcraft][:source][:repository]

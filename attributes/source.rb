@@ -7,6 +7,4 @@
 # License:: MIT
 #
 
-
-default[:simulationcraft][:source][:dir]        = "/opt/simulationcraft/src"
 default[:simulationcraft][:source][:repository] = "https://simulationcraft.googlecode.com/svn/trunk"
