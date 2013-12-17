@@ -27,3 +27,7 @@ execute "make" do
   cwd ::File.join(node[:simulationcraft][:source][:dir], "engine")
   action :nothing
 end
+
+link node[:simulationcraft][:bin_path] do
+  to ::File.join(node[:simulationcraft][:source][:dir], "engine", "simc")
+end
